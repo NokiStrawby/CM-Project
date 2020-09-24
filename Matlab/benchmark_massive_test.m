@@ -34,7 +34,7 @@ for sub_dir_idx = 3:size(listDir,1)
     end
     dir_res = dir_res(1:dir_res_it, 1:10);
     T = cell2table(dir_res, 'VariableNames', {'frame_name', 'm', 'n', 'rank', 'k', 'err', 'opt', 'diff', 'el_time', 'it'});
-    writetable(T, strcat(subDir_path, "/out/frames_analysis.csv"));
+    writetable(T, strcat(subDir_path, "/out/frames_analysis_", subDir_name, ".csv"));
     strcat("Directory ", subDir_name, " completata ", string(toc(dir_tic)))
 end
 
