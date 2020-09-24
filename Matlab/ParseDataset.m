@@ -1,4 +1,4 @@
-datafolder = 'data_random';
+datafolder = 'Preliminary_Sparse_60';
 
 execution_logs_folder = 'logs';
 logsFolder = sprintf('%s/%s', datafolder, execution_logs_folder);
