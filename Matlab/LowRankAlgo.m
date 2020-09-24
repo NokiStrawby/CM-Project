@@ -88,7 +88,7 @@ while stopCond
         find = 1;
     else         % Find V
         V = SubTask(A,U,init_w);
-        find = 0;    
+        find = 0;   
     end
     
     % Check for termination
@@ -265,7 +265,7 @@ switch arg
     case 'stop_c_type'
         v = 'approxerror';
     case 'init_t'
-        v = 'eye';
+        v = 'eyedistinct';
     case 'init_w'
         v = 'zeros';
     case 'printsteps'
