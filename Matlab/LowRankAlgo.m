@@ -30,9 +30,14 @@
         == 1 -> Summary-only
         == 0 -> None
 %}
+
 function [U,V, it, errs, gradnorms] = LowRankAlgo(A, k, max_it, err_eps, grad_eps, stop_c_type, init_t, init_w, printsteps)
 
-arguments % Parsing input arguments
+arguments
+end
+
+
+arguments
     A (:,:) {mustBeNumeric}
     k (1,1) {mustBeNumeric}
     max_it (1,1) {mustBeNumeric} = DefaultValue('max_it')
