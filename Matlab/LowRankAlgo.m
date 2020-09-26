@@ -161,9 +161,12 @@ function [term, cur_err, rel_diff, ng] = TerminationCheck(stop_t, maxit, err_t, 
         return
     end
     
-    need_err = false;
+    % If set to true then the algorithm will compute and log all stop metrics
+    LogAllMetrics = true;
+    
+    need_err = LogAllMetrics;
     term_err = false;
-    need_grad = false;
+    need_grad = LogAllMetrics;
     term_grad = false;
     
     switch stop_t
