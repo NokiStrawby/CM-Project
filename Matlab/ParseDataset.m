@@ -1,4 +1,4 @@
-datafolder = 'Core_TimeComp';
+datafolder = 'Core_Rectangular_Impact';
 
 execution_logs_folder = 'logs';
 logsFolder = sprintf('%s/%s', datafolder, execution_logs_folder);

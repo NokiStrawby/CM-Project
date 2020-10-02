@@ -58,7 +58,14 @@ for rk = (50:50:400)
     Core_TimeComp = [Core_TimeComp; [rk, rk, rk, 3, 2, round(rk/2), (rk-1)]];
 end
 
-Batches = Core_TimeComp;
+Core_Rectangular_Impact = { ...
+    [256, 256, 256, 3, 16]; ...
+    [512, 128, 128, 3, 16]; ...
+    [1024, 64, 64, 3, 16]; ...
+    [2048, 32, 32, 3, 16]; ...
+    };
+
+Batches = Core_Rectangular_Impact;
 
 %{
     e.g. A line containing:
@@ -73,7 +80,7 @@ Batches = Core_TimeComp;
             - 10 (k3)
 %}
     
-outfolder = 'Core_TimeComp';
+outfolder = 'Core_Rectangular_Impact';
 
 for i = 1:size(Batches, 1)
     CurLine = Batches{i};
