@@ -21,7 +21,6 @@ for b = 1:n
     g(si:ei) = U' * D(:,b);
 end
 
-%g = -2*g;
 g = -1 * g / norm(D, 'fro');
 
 ng = norm(g, 'fro');
