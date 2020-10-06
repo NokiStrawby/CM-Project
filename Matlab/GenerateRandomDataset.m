@@ -65,7 +65,9 @@ Core_Rectangular_Impact = { ...
     [2048, 32, 32, 3, 16]; ...
     };
 
-Batches = Core_Rectangular_Impact;
+Extra_RRs = Core_TimeComp;
+
+Batches = Extra_RRs;
 
 %{
     e.g. A line containing:
@@ -80,7 +82,7 @@ Batches = Core_Rectangular_Impact;
             - 10 (k3)
 %}
     
-outfolder = 'Core_Rectangular_Impact';
+outfolder = 'Extra_RRs';
 
 for i = 1:size(Batches, 1)
     CurLine = Batches{i};
