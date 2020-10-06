@@ -22,7 +22,7 @@ for b = 1:n
 end
 
 %g = -2*g;
-g = g / norm(D, 'fro');
+g = -1 * g / norm(D, 'fro');
 
 ng = norm(g, 'fro');
 end
