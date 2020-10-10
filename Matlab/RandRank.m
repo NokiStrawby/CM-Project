@@ -1,3 +1,6 @@
+% Generates a random matrix of a given shape and rank, by generating a
+% random SVD and truncating it
+
 function X = RandRank(m,n,r)
 
 A = orth(randn(m,m));

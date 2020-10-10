@@ -1,3 +1,5 @@
+% Computes the QR factorization using column pivoting
+
 function [Q, R, P, r] = MyQRP(A)
 zero_tol = 1e-15;
 [m, n] = size(A);

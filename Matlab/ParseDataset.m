@@ -1,3 +1,6 @@
+% Executes the algorithm over a set of tasks contained in a folder and
+% saves the execution stats
+
 datafolder = 'Core_Rectangular_Impact';
 
 execution_logs_folder = 'logs';

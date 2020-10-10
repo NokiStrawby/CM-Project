@@ -1,3 +1,6 @@
+% Executes the algorithm using random restart over a folder containing a
+% set of tasks and stores the execution statistics.
+
 datafolder = 'Extra_RRs';
 
 execution_logs_folder = 'logs';

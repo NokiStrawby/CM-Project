@@ -1,6 +1,8 @@
 %{
-    Modified version of the main algorithm which computes the difference
-    from the final approximation
+    Modified version of the main algorithm which computes and returns 
+    the difference from the final approximation at each iteration, this is
+    done to get some insights on the execution
+    
 %}
 
 function [U,V, it, errs, gradnorms, rate_err] = LowRankAlgo_Rate(A, k, max_it, err_eps, grad_eps, stop_c_type, init_t, init_w, printsteps)

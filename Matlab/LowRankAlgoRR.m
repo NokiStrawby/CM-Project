@@ -1,3 +1,9 @@
+% Executes the algorithm with a random restart approach, having a number of
+% random restarts equal to rrs
+
+% The parameter init_t must be set to use a random initialization logic
+% (that is, one among random, randfull and randeye)
+
 function [U,V, it, errs, gradnorms, rrerrors] = LowRankAlgoRR(rrs, A, k, max_it, err_eps, grad_eps, stop_c_type, init_t, init_w, printsteps)
 arguments
     rrs (1,1) {mustBeNumeric}

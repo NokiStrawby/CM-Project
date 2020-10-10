@@ -1,3 +1,5 @@
+% Returns the default values for every parameter of the algorithm
+
 function [v] = DefaultValue(arg)
 switch arg
     case 'max_it'

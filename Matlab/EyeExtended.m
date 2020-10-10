@@ -1,3 +1,17 @@
+% Returns a matrix of size m x n shaped as (suppose m > n)
+%{
+    |1 0 0 1 0|
+    |0 1 0 0 1|
+    |0 0 1 0 0|
+%}
+% While if distinct = true we generate a similar shape but with
+% non-duplicated columns, as:
+%{
+    |1 0 0 2 0 0 3|
+    |0 1 0 0 2 0 0|
+    |0 0 1 0 0 2 0|
+%}
+
 function [X] = EyeExtended(m,n, distinct)
 arguments % Parsing input arguments
     m (1,1) {mustBeNumeric}

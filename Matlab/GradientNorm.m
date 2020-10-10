@@ -1,3 +1,6 @@
+% Computes the gradient norm for the function eps_A, given U,V and the
+% product X=U*V
+
 function [ng] = GradientNorm(A, X, U, V)
 [m,n] = size(A);
 [~,k] = size(U);
