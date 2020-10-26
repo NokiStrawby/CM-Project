@@ -5,12 +5,11 @@ im_in = imread(im_path);
 gray_im = rgb2gray(im_in);
 im_matr = im2single(gray_im);
 rk = rank(im_matr);
-k = ceil(0.5 * rk);
+k = ceil(0.05 * rk);
 
 tic
 [U_svd, S, V_svd] = svd(im_matr);
 fprintf("Elapsed time SVD %f\n", toc);
-
 
 for it=1:20
    tic
