@@ -11,9 +11,9 @@ tic
 [U_svd, S, V_svd] = svd(im_matr);
 fprintf("Elapsed time SVD %f\n", toc);
 
-for it=1:20
+for it=1:10
    tic
-   [U,V,~,~,~] = LowRankAlgo(im_matr, k, it, 1e-6, 1e-15, 'approxerror', 'eye', 'zeros', 0);
+   [U,V,~,~,~] = LowRankAlgo(im_matr, k, it, 1e-6, 1e-15, 'approxerror', 'eyeextended', 'zeros', 0);
    fprintf("Numero iterazioni %d, elapsed time %f\n", it, toc);
    alg_appr = U*V;
    alg_err = norm(im_matr - alg_appr, 'fro') / norm(im_matr, 'fro');
